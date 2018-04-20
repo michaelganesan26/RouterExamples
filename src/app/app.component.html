@@ -18,3 +18,20 @@
   </li>
 </ul>
 
+<h3>Routing</h3>
+<nav>
+  <a [routerLink]="['/data']">Data</a>
+  <a [routerLink]="['/personlist']">Person List</a>
+  <a [routerLink]="['/home']">Home</a>
+</nav>
+<router-outlet></router-outlet> 
+<br>
+<h3>Auxiliary route</h3>
+<div style="color:green;margin-top:1rem;">Sidebar Outlet</div>
+<div>
+  <router-outlet name="sidebar"></router-outlet>
+</div>
+
+
+
+
